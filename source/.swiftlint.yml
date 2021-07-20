@@ -1,0 +1,78 @@
+excluded:
+  - Pods
+
+included:
+  - FoodyCookBook
+
+disabled_rules: # rule identifiers to exclude from running
+  - todo
+  - trailing_whitespace
+  - notification_center_detachment
+  - unused_optional_binding
+  - inclusive_language
+  - unused_closure_parameter
+  - conditional_returns_on_newline
+  - nesting
+  - comment_spacing
+  - empty_enum_arguments
+  - identifier_name
+
+opt_in_rules:
+  - closure_spacing
+  - explicit_init
+  - redundant_nil_coalescing
+  - nimble_operator
+  - closure_end_indentation
+  - first_where
+  - contains_over_first_not_nil
+  - empty_string
+  - fatal_error_message
+  - empty_count
+  - sorted_first_last
+  - toggle_bool
+  - modifier_order
+  - empty_collection_literal
+  - last_where
+  - reduce_into
+  - flatmap_over_map_reduce
+  - contains_over_filter_count
+  - contains_over_filter_is_empty
+  - contains_over_range_nil_comparison
+  - vertical_whitespace
+
+# rule parameters
+file_length:
+  - 800 #warning
+  - 1000 #error
+function_body_length:
+  - 80 #warning
+  - 120 #error
+line_length:
+  - 300 #warning
+  - 350 #error
+type_body_length:
+  - 400 #warning
+  - 500 #error
+large_tuple:
+  - 6 #warning
+  - 8 #error
+type_name:
+  max_length:
+    - 60 #warning
+    - 80 #error
+identifier_name:
+  max_length:
+    - 60 #warning
+    - 80 #error
+  excluded: # excluded via string array
+    - id
+    - op
+    - am
+    - pm
+cyclomatic_complexity:
+  ignores_case_statements: true
+  warning: 15
+function_parameter_count:
+  ignores_default_parameters: true
+  warning: 8
+  error: 10

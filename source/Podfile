@@ -1,0 +1,24 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '13.0'
+workspace 'FoodyCookBook'
+use_frameworks!
+
+target 'FoodyCookBook' do
+  project 'FoodyCookBook/FoodyCookBook'
+
+  # ignore all warnings from all pods
+  inhibit_all_warnings!
+
+  # Pods for FoodyCookBook
+  pod 'SwiftLint'
+
+  target 'FoodyCookBookTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'FoodyCookBookUITests' do
+    # Pods for testing
+  end
+
+end
