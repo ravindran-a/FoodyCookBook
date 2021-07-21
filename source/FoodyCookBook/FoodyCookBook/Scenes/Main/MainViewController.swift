@@ -1,13 +1,14 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  FoodyCookBook
 //
 //  Created by Ravindran on 20/07/21.
 //
 
 import UIKit
+import Foundation
 
-class ViewController: UIViewController {
+class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

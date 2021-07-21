@@ -12,12 +12,16 @@
 		86BF7D4B08E89D1AC2FACBB5 /* Pods_FoodyCookBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905CBD25F194EF8B7C2DF76F /* Pods_FoodyCookBook.framework */; };
 		DED4ECDC26A73863006DEEF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4ECDB26A73863006DEEF0 /* AppDelegate.swift */; };
 		DED4ECDE26A73863006DEEF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4ECDD26A73863006DEEF0 /* SceneDelegate.swift */; };
-		DED4ECE026A73863006DEEF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4ECDF26A73863006DEEF0 /* ViewController.swift */; };
+		DED4ECE026A73863006DEEF0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4ECDF26A73863006DEEF0 /* MainViewController.swift */; };
 		DED4ECE326A73864006DEEF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED4ECE126A73864006DEEF0 /* Main.storyboard */; };
 		DED4ECE526A73865006DEEF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED4ECE426A73865006DEEF0 /* Assets.xcassets */; };
 		DED4ECE826A73865006DEEF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED4ECE626A73865006DEEF0 /* LaunchScreen.storyboard */; };
 		DED4ECF326A73865006DEEF0 /* FoodyCookBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4ECF226A73865006DEEF0 /* FoodyCookBookTests.swift */; };
 		DED4ECFE26A73865006DEEF0 /* FoodyCookBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4ECFD26A73865006DEEF0 /* FoodyCookBookUITests.swift */; };
+		DED4ED2026A7C96B006DEEF0 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4ED1F26A7C96B006DEEF0 /* Meal.swift */; };
+		DED4ED2226A7CBBD006DEEF0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4ED2126A7CBBD006DEEF0 /* HomeViewController.swift */; };
+		DED4ED2426A7CBC9006DEEF0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4ED2326A7CBC9006DEEF0 /* SearchViewController.swift */; };
+		DED4ED2626A7CBD1006DEEF0 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4ED2526A7CBD1006DEEF0 /* FavouritesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +52,7 @@
 		DED4ECD826A73863006DEEF0 /* FoodyCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodyCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED4ECDB26A73863006DEEF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DED4ECDD26A73863006DEEF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DED4ECDF26A73863006DEEF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DED4ECDF26A73863006DEEF0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DED4ECE226A73864006DEEF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DED4ECE426A73865006DEEF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED4ECE726A73865006DEEF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +63,10 @@
 		DED4ECF926A73865006DEEF0 /* FoodyCookBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodyCookBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED4ECFD26A73865006DEEF0 /* FoodyCookBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodyCookBookUITests.swift; sourceTree = "<group>"; };
 		DED4ECFF26A73865006DEEF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DED4ED1F26A7C96B006DEEF0 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		DED4ED2126A7CBBD006DEEF0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DED4ED2326A7CBC9006DEEF0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DED4ED2526A7CBD1006DEEF0 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		E1B195BD51D6F2A5B2B7639F /* Pods-FoodyCookBook-FoodyCookBookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodyCookBook-FoodyCookBookUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoodyCookBook-FoodyCookBookUITests/Pods-FoodyCookBook-FoodyCookBookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F027A2DCC14345E0BBBB0030 /* Pods-FoodyCookBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodyCookBookTests.debug.xcconfig"; path = "Target Support Files/Pods-FoodyCookBookTests/Pods-FoodyCookBookTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,13 +148,10 @@
 		DED4ECDA26A73863006DEEF0 /* FoodyCookBook */ = {
 			isa = PBXGroup;
 			children = (
-				DED4ECDB26A73863006DEEF0 /* AppDelegate.swift */,
-				DED4ECDD26A73863006DEEF0 /* SceneDelegate.swift */,
-				DED4ECDF26A73863006DEEF0 /* ViewController.swift */,
-				DED4ECE126A73864006DEEF0 /* Main.storyboard */,
-				DED4ECE426A73865006DEEF0 /* Assets.xcassets */,
-				DED4ECE626A73865006DEEF0 /* LaunchScreen.storyboard */,
-				DED4ECE926A73865006DEEF0 /* Info.plist */,
+				DED4ED0C26A73EBF006DEEF0 /* Scenes */,
+				DED4ED0D26A73EC4006DEEF0 /* Infra */,
+				DED4ED0E26A73ECB006DEEF0 /* AppResources */,
+				DED4ED1326A740ED006DEEF0 /* SupportingFiles */,
 			);
 			path = FoodyCookBook;
 			sourceTree = "<group>";
@@ -167,6 +172,141 @@
 				DED4ECFF26A73865006DEEF0 /* Info.plist */,
 			);
 			path = FoodyCookBookUITests;
+			sourceTree = "<group>";
+		};
+		DED4ED0C26A73EBF006DEEF0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DED4ED1C26A7C901006DEEF0 /* Main */,
+				DED4ED1926A7C8EA006DEEF0 /* Home */,
+				DED4ED1A26A7C8F1006DEEF0 /* Search */,
+				DED4ED1B26A7C8F5006DEEF0 /* Favourites */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DED4ED0D26A73EC4006DEEF0 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				DED4ED1D26A7C948006DEEF0 /* Models */,
+				DED4ED1E26A7C94C006DEEF0 /* Views */,
+				DED4ED2726A7CBDA006DEEF0 /* Storyboards */,
+				DED4ED1826A74155006DEEF0 /* Constants */,
+				DED4ED1726A7414D006DEEF0 /* Managers */,
+				DED4ED1626A74143006DEEF0 /* Protocols */,
+				DED4ED1526A7413E006DEEF0 /* Extensions */,
+				DED4ED1426A7413A006DEEF0 /* Enums */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		DED4ED0E26A73ECB006DEEF0 /* AppResources */ = {
+			isa = PBXGroup;
+			children = (
+				DED4ECE426A73865006DEEF0 /* Assets.xcassets */,
+			);
+			path = AppResources;
+			sourceTree = "<group>";
+		};
+		DED4ED1326A740ED006DEEF0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DED4ECDB26A73863006DEEF0 /* AppDelegate.swift */,
+				DED4ECDD26A73863006DEEF0 /* SceneDelegate.swift */,
+				DED4ECE926A73865006DEEF0 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		DED4ED1426A7413A006DEEF0 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		DED4ED1526A7413E006DEEF0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DED4ED1626A74143006DEEF0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DED4ED1726A7414D006DEEF0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DED4ED1826A74155006DEEF0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DED4ED1926A7C8EA006DEEF0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DED4ED2126A7CBBD006DEEF0 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DED4ED1A26A7C8F1006DEEF0 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				DED4ED2326A7CBC9006DEEF0 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		DED4ED1B26A7C8F5006DEEF0 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				DED4ED2526A7CBD1006DEEF0 /* FavouritesViewController.swift */,
+			);
+			path = Favourites;
+			sourceTree = "<group>";
+		};
+		DED4ED1C26A7C901006DEEF0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DED4ECDF26A73863006DEEF0 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DED4ED1D26A7C948006DEEF0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DED4ED1F26A7C96B006DEEF0 /* Meal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DED4ED1E26A7C94C006DEEF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED4ED2726A7CBDA006DEEF0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DED4ECE126A73864006DEEF0 /* Main.storyboard */,
+				DED4ECE626A73865006DEEF0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,8 +530,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DED4ECE026A73863006DEEF0 /* ViewController.swift in Sources */,
+				DED4ED2426A7CBC9006DEEF0 /* SearchViewController.swift in Sources */,
+				DED4ED2226A7CBBD006DEEF0 /* HomeViewController.swift in Sources */,
+				DED4ED2026A7C96B006DEEF0 /* Meal.swift in Sources */,
+				DED4ECE026A73863006DEEF0 /* MainViewController.swift in Sources */,
 				DED4ECDC26A73863006DEEF0 /* AppDelegate.swift in Sources */,
+				DED4ED2626A7CBD1006DEEF0 /* FavouritesViewController.swift in Sources */,
 				DED4ECDE26A73863006DEEF0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
