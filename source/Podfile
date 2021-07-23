@@ -11,7 +11,7 @@ target 'FoodyCookBook' do
 
   # Pods for FoodyCookBook
   pod 'SwiftLint'
-
+  
   target 'FoodyCookBookTests' do
     inherit! :search_paths
     # Pods for testing
