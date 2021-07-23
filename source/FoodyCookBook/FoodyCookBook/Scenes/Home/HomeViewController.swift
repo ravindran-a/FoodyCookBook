@@ -89,7 +89,9 @@ extension HomeViewController {
             
             cell.favouriteSelected = {
                 FavouritesManager.shared.updateFavouriteList((self.mealItems?.meals?.first)!)
-                tableView.reloadRows(at: [indexPath], with: .automatic)
+                DispatchQueue.main.async {
+                    tableView.reloadRows(at: [indexPath], with: .automatic)
+                }
             }
 
             return cell

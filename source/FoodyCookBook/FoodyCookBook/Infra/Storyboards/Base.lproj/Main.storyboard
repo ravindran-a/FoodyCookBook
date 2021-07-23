@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Cv2-qR-4NC">
+                            <searchBar contentMode="redraw" placeholder="Enter Meal Name Here To Search..." translatesAutoresizingMaskIntoConstraints="NO" id="Cv2-qR-4NC">
                                 <rect key="frame" x="0.0" y="88" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="s1N-cD-bZb"/>
@@ -27,7 +27,7 @@
                                     <outlet property="delegate" destination="BCl-f1-5Ky" id="ebS-6K-9pv"/>
                                 </connections>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IIz-4M-A1s">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="IIz-4M-A1s">
                                 <rect key="frame" x="0.0" y="132" width="414" height="681"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -35,6 +35,12 @@
                                     <outlet property="delegate" destination="BCl-f1-5Ky" id="eCd-X6-f9N"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops it's empty!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-rC-oCu">
+                                <rect key="frame" x="129" y="435" width="156" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="vsO-yW-VUC" customClass="Spinner" customModule="FoodyCookBook" customModuleProvider="target">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -43,11 +49,13 @@
                         <viewLayoutGuide key="safeArea" id="iCY-A6-Azl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Ply-rC-oCu" firstAttribute="centerX" secondItem="kES-3v-6HV" secondAttribute="centerX" id="0Z8-En-oNA"/>
                             <constraint firstItem="IIz-4M-A1s" firstAttribute="leading" secondItem="iCY-A6-Azl" secondAttribute="leading" id="6Vh-g6-utg"/>
                             <constraint firstItem="Cv2-qR-4NC" firstAttribute="top" secondItem="iCY-A6-Azl" secondAttribute="top" id="FX5-Vo-x2E"/>
                             <constraint firstItem="iCY-A6-Azl" firstAttribute="bottom" secondItem="IIz-4M-A1s" secondAttribute="bottom" id="a7k-n6-xhS"/>
                             <constraint firstItem="iCY-A6-Azl" firstAttribute="trailing" secondItem="Cv2-qR-4NC" secondAttribute="trailing" id="d9E-hV-R8r"/>
                             <constraint firstItem="Cv2-qR-4NC" firstAttribute="leading" secondItem="kES-3v-6HV" secondAttribute="leading" id="eQ9-bu-E6y"/>
+                            <constraint firstItem="Ply-rC-oCu" firstAttribute="centerY" secondItem="kES-3v-6HV" secondAttribute="centerY" id="etf-Ta-bkG"/>
                             <constraint firstItem="IIz-4M-A1s" firstAttribute="top" secondItem="Cv2-qR-4NC" secondAttribute="bottom" id="lE8-cG-JPl"/>
                             <constraint firstItem="iCY-A6-Azl" firstAttribute="trailing" secondItem="IIz-4M-A1s" secondAttribute="trailing" id="vkz-hX-dE9"/>
                         </constraints>
@@ -57,6 +65,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" image="menu" landscapeImage="menu" id="VJM-0r-MgF"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="noResults" destination="Ply-rC-oCu" id="Dig-fT-k1l"/>
                         <outlet property="searchBar" destination="Cv2-qR-4NC" id="6hH-uD-s4t"/>
                         <outlet property="searchTable" destination="IIz-4M-A1s" id="sMv-c5-Fqd"/>
                         <outlet property="spinner" destination="vsO-yW-VUC" id="Qog-IS-KRR"/>
@@ -239,6 +248,17 @@
             <point key="canvasLocation" x="377" y="958"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="29z-Hu-CWo">
+            <size key="intrinsicContentSize" width="20" height="20"/>
+        </designable>
+        <designable name="FcC-hN-oQg">
+            <size key="intrinsicContentSize" width="20" height="20"/>
+        </designable>
+        <designable name="vsO-yW-VUC">
+            <size key="intrinsicContentSize" width="20" height="20"/>
+        </designable>
+    </designables>
     <resources>
         <image name="favourite" width="25" height="25"/>
         <image name="home" width="25" height="25"/>

@@ -48,7 +48,7 @@ extension FavouritesViewController {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return meals?.count ?? 0
+        return meals?.count ?? 0 == 0 ? 0 : (meals?.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
